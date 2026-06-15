@@ -5,51 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Portfolio | Izzat Fariz</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f4f4f4; }
-        section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-        h1, h2 { color: #333; }
-        .tech-tag { display: inline-block; background: #e0e0e0; padding: 5px 10px; margin: 2px; border-radius: 4px; }
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-blue: #1e3a8a;
+            --accent-blue: #3b82f6;
+            --text-color: #e5e7eb;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; background-color: var(--bg-color); color: var(--text-color); }
+        section { background-color: var(--surface-color); padding: 25px; margin-bottom: 25px; border-radius: 12px; border-left: 5px solid var(--primary-blue); box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        h1, h2, h3 { color: #ffffff; }
+        a { color: var(--accent-blue); text-decoration: none; font-weight: bold; }
+        .tech-tag { display: inline-block; background: var(--primary-blue); color: white; padding: 6px 12px; margin: 4px; border-radius: 20px; font-size: 0.9em; }
+        
+        .lab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .lab-card { background: #262626; padding: 20px; border-radius: 10px; border: 1px solid #333; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 15px; border-radius: 8px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Izzat Fariz Bin Zulkiflee</h1>
-        <p><strong>Matric No:</strong> A212692 | <strong>Programme:</strong> [Masukkan Program] | <strong>Instructor:</strong> Dr. Nazatul Aini</p>
+        <p><strong>Matric No:</strong> A212692 | <strong>Programme:</strong> Information Technology | <strong>Instructor:</strong> Dr. Nazatul Aini</p>
     </header>
 
     <section>
         <h2>1. Student Profile</h2>
-        <p>Short intro: Student of UKM, FTSM. Passionate about mobile development.</p>
-        <p><strong>Learning Goal:</strong> To master full-stack mobile development using Kotlin & Firebase.</p>
-        <p><strong>Chosen SDG:</strong> SDG [Masukkan SDG] - [One-line statement]</p>
+        <p>Student of UKM, FTSM. Dedicated mobile app developer focused on building scalable and user-centric Android applications.</p>
+        <p><strong>Learning Goal:</strong> To master advanced mobile architecture, including Room persistence, Cloud integration, and sensor-based hardware interaction.</p>
+        <p><strong>Chosen SDG:</strong> SDG 1: No Poverty -Developing digital solutions to improve financial inclusion and provide access to economic resources for underserved communities.</p>
     </section>
 
     <section>
         <h2>2. Lab Submissions</h2>
-        <ul>
-            <li><strong>Lab 1-5:</strong> [Link ke YouTube VSR & Screenshot setiap Lab]</li>
-        </ul>
+        <div class="lab-grid">
+            <div class="lab-card">
+                <h3>Lab 1 — UI</h3>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe></div>
+                <p><strong>Reflection:</strong> Built foundational UI elements using Jetpack Compose, mastering layout modifiers and basic widget structuring.</p>
+            </div>
+            <div class="lab-card">
+                <h3>Lab 2 — Interaction</h3>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe></div>
+                <p><strong>Reflection:</strong> Implemented state management to handle user inputs, making the UI dynamic and responsive.</p>
+            </div>
+            <div class="lab-card">
+                <h3>Lab 3 — Material Design</h3>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe></div>
+                <p><strong>Reflection:</strong> Applied Material Design 3 guidelines to create a polished, professional, and accessible user experience.</p>
+            </div>
+            <div class="lab-card">
+                <h3>Lab 4 — Navigation</h3>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe></div>
+                <p><strong>Reflection:</strong> Successfully implemented multi-screen navigation and data sharing between Composables using ViewModel.</p>
+            </div>
+            <div class="lab-card">
+                <h3>Lab 5 — Room</h3>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe></div>
+                <p><strong>Reflection:</strong> Achieved local data persistence by integrating Room Database for permanent offline storage.</p>
+            </div>    
+        </div>
     </section>
 
     <section>
         <h2>3. Project Submissions</h2>
         <h3>Project 1</h3>
-        <p>Problem Statement: [Isi sini] | Repo: <a href="[Link Repo P1]">GitHub Link</a></p>
+        <p><strong>Problem Statement:</strong> [Isi sini] | <strong>Repo:</strong> <a href="#">GitHub Link</a></p>
         <h3>Project 2 (Earnly)</h3>
-        <p>Problem Statement: [Isi sini] | Repo: <a href="https://github.com/a212692-Izzat/A212692_lzzat_DrNazatulAini_Lab5">GitHub Link</a></p>
+        <p><strong>Problem Statement:</strong> Empowering freelance work through an integrated, data-persistent platform utilizing real-time API and sensor data. | <strong>Repo:</strong> <a href="https://github.com/a212692-Izzat/A212692_lzzat_DrNazatulAini_Lab5">GitHub Link</a></p>
     </section>
 
     <section>
         <h2>4. Skills & Tech Stack</h2>
         <div class="tech-tag">Kotlin</div> <div class="tech-tag">Jetpack Compose</div> 
         <div class="tech-tag">Room Database</div> <div class="tech-tag">Firebase</div> 
-        <div class="tech-tag">Retrofit</div>
+        <div class="tech-tag">Retrofit</div> <div class="tech-tag">Git/GitHub</div>
     </section>
 
     <section>
         <h2>5. Resources & Acknowledgement</h2>
-        <p>AI Assistance: Gemini (Google) used for code debugging & structuring logic.</p>
+        <p>AI Assistance: Gemini (Google) for architectural guidance, debugging, and e-Portfolio scaffolding.</p>
     </section>
 
 </body>
